@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style type="text/css">
+  .button_red{
+    background: red;
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    font-family: 'Raleway';
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    border: 0;
+    cursor: pointer;
+
+    border-radius: 2px;
+
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+  }
+  .button_yellow{
+    background: yellow;
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    font-family: 'Raleway';
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    border: 0;
+    cursor: pointer;
+
+    border-radius: 2px;
+
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+  }
+  .button_pink{
+    background: pink;
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    font-family: 'Raleway';
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    border: 0;
+    cursor: pointer;
+
+    border-radius: 2px;
+
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+  }
+  .button_grey{
+    width: 100px;
+    background: grey;
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    font-family: 'Raleway';
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    border: 0;
+    cursor: pointer;
+
+    border-radius: 2px;
+
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  }
+  .button_green{
+    width: 100px;
+    background: green;
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    font-family: 'Raleway';
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    border: 0;
+    cursor: pointer;
+
+    border-radius: 2px;
+
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .square{
+    position: absolute;
+    left: 97%;
+    bottom: 95%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+  }
+
+</style>
+
+<buttom class="button_red" id="red">red</buttom><br>
+<buttom class="button_green" id="green">green</buttom><br>
+<buttom class="button_grey" id="grey">grey</buttom><br>
+<buttom class="button_pink" id="pink">pink</buttom><br>
+<buttom class="button_yellow" id="yellow">yellow</buttom><br>
+
+<div class="square" id="square">
+</div>
+
+
+<script>
+  let el = document.getElementById('square');
+
+  let red = document.getElementById('red');
+  let green = document.getElementById('green');
+  let grey = document.getElementById('grey');
+  let pink = document.getElementById('pink');
+  let yellow = document.getElementById('yellow');
+
+  red.addEventListener('click', function() {
+    el.style.backgroundColor = "red";
+  });
+
+  green.addEventListener('click', function() {
+    el.style.backgroundColor = "green";
+  });
+
+  grey.addEventListener('click', function() {
+    el.style.backgroundColor = "grey";
+  });
+
+  pink.addEventListener('click', function() {
+    el.style.backgroundColor = "pink";
+  });
+
+  yellow.addEventListener('click', function() {
+    el.style.backgroundColor = "yellow";
+  });
+
+</script>
+
+</body>
+</html>

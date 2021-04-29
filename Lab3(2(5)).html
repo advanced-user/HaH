@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <span style="font-size: 14pt" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias nihil nisi possimus repellendus. Accusamus ad adipisci consectetur dolores in iste, officia quae quam quis repellendus! A, adipisci aliquam amet atque beatae commodi culpa debitis doloremque earum et eum expedita, fugiat id ipsa iure libero magni natus nemo nesciunt officia officiis provident quae quam quibusdam quod, recusandae reiciendis saepe veniam voluptate voluptatibus! Alias, delectus doloremque esse eum expedita facilis ipsa ipsam laboriosam laudantium minus necessitatibus nobis officia officiis provident quisquam voluptates voluptatum. At ea iure nihil placeat quas, reiciendis rem soluta voluptatum. Adipisci aliquid deleniti deserunt excepturi ipsum magnam nesciunt quibusdam reiciendis repellat, sequi, veniam voluptas. Commodi consequatur corporis, cum cumque dicta ducimus eligendi fugiat impedit natus necessitatibus perferendis quaerat quia.</span>
+
+  <script>
+    let el = document.getElementById('text');
+    let cookies = document.cookie.split(";");
+    let fontSize = 15;
+    for(let i=0; i<cookies.length; i++){
+
+      let parts = cookies[i].split("="),
+              name = parts[0],
+              value = parts[1];
+      if(name == "size") {
+        fontSize = Number(value);
+        break;
+      }
+    }
+    el.style.fontSize = fontSize + 'pt';
+
+
+    document.addEventListener("keydown", (e) => {
+      let fontSize;
+      switch (e.keyCode) {
+        case 107:
+          fontSize =  Number(el.style.fontSize.substr(0, el.style.fontSize.length-2));
+          fontSize++;
+          el.style.fontSize = fontSize + 'pt';
+          document.cookie = "size=" + fontSize;
+          break
+        case 109:
+          // +
+          fontSize =  Number(el.style.fontSize.substr(0, el.style.fontSize.length-2));
+          fontSize--;
+          el.style.fontSize = fontSize + 'pt';
+          document.cookie = "size=" + fontSize;
+          break
+      }
+    })
+  </script>
+</body>
+</html>
