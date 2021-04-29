@@ -46,128 +46,124 @@
     </symbol>
 </svg>
 
-<!-- Header -->
-<header class="header fixed" id="header">
-    <div class="container">
-        <div class="header_inner">
-            <nav id="nav">
-                <ul>
-                    <li><a href="#">Главная</a>
-                        <ul>
-                            <li><a class="nav_link" href="index.html" >Главная</a></li>
-                            <li><a class="nav_link" href="Team.html" >Наша команда</a></li>
-                            <li><a class="nav_link" href="Reviews.html" >Отзывы</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+<div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+        <a href="" class="header__logo"></a>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li><a class="header__link" href="index.html" >Главная</a></li>
+                <li><a class="header__link" href="Team.html" >Наша команда</a></li>
+                <li><a class="header__link" href="Reviews.html" >Отзывы</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <div style="text-align: center; margin-bottom: 30px"><h1>Отзывы</h1></div>
-    <article>
+    <main>
+        <div style="text-align: center; margin-bottom: 30px"><h1>Отзывы</h1></div>
+        <article>
+            <div class="container">
+                <h2>НАША РАБОТА</h2>
+                <div>
+                    Здесь вы можете оставить свои комментарии о нашей работе
+                </div>
+                <div>
+                    <h3>Комментарии</h3>
+                    <section>
+                        <h4>Неплохо</h4>
+                        <p>Мне понравилась ваша работа</p>
+                    </section>
+                    <section>
+                        <h4>Такое</h4>
+                        <p>Ожидала большего</p>
+                    </section>
+                    <section>
+                        <h4>Приятный и отзывчивый коллектив</h4>
+                        <p>Было очень приятно с вами работать</p>
+                    </section>
+                </div>
+                <form method="get" action="index.html">
+                    <div class="user_data">
+                        <label>Дата</label><br/>
+                        <input id="datetime" type="datetime-local" required>
+                    </div>
+                    <div class="user_data">
+                        <label>Email</label><br/>
+                        <input type="email" name="email" required/>
+                    </div>
+                    <div class="user_data">
+                        <label>tel</label><br/>
+                        <input type="tel" name="tel" required/>
+                    </div>
+                    <div class="user_data">
+                        <label>url</label><br/>
+                        <input type="url" name="url" required/>
+                    </div>
+
+                    <button type="submit">Напиши нам здесь</button>
+                </form>
+            </div>
+        </article>
+
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
         <div class="container">
-        <h2>НАША РАБОТА</h2>
-        <div>
-            Здесь вы можете оставить свои комментарии о нашей работе
-        </div>
-        <div>
-            <h3>Комментарии</h3>
-            <section>
-                <h4>Неплохо</h4>
-                <p>Мне понравилась ваша работа</p>
-            </section>
-            <section>
-                <h4>Такое</h4>
-                <p>Ожидала большего</p>
-            </section>
-            <section>
-                <h4>Приятный и отзывчивый коллектив</h4>
-                <p>Было очень приятно с вами работать</p>
-            </section>
-        </div>
-            <form method="get" action="index.html">
-                <div class="user_data">
-                    <label>Дата</label><br/>
-                    <input id="datetime" type="datetime-local" required>
-                </div>
-                <div class="user_data">
-                    <label>Email</label><br/>
-                    <input type="email" name="email" required/>
-                </div>
-                <div class="user_data">
-                    <label>tel</label><br/>
-                    <input type="tel" name="tel" required/>
-                </div>
-                <div class="user_data">
-                    <label>url</label><br/>
-                    <input type="url" name="url" required/>
+
+            <div class="footer_inner">
+                <div class="footer_block">
+                    <h4 class="footer_title">Адресс</h4>
+                    <address class="footer_address">
+                        <div>3481 Melrose Place</div>
+                        <div>Beverly Hills, CA 90210</div>
+                    </address>
                 </div>
 
-                <button type="submit">Напиши нам здесь</button>
-            </form>
-        </div>
-    </article>
+                <div class="footer_block">
+                    <h4 class="footer_title">Наши аккаунты</h4>
+                    <div class="social social--footer">
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social_item" href="#" target="_blank">
+                            <svg class="social_icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="footer_block">
+                    <h4 class="footer_title">О нас</h4>
+                    <div class="footer_text">
+                        <p>Мы стремимся стать лучше.</p>
+                    </div>
+                </div>
 
-</main>
+            </div><!-- footer_title -->
 
-<!-- Footer -->
+        </div><!-- container -->
 
-<footer class="footer">
-    <div class="container">
-
-        <div class="footer_inner">
-            <div class="footer_block">
-                <h4 class="footer_title">Адресс</h4>
-                <address class="footer_address">
-                    <div>3481 Melrose Place</div>
-                    <div>Beverly Hills, CA 90210</div>
-                </address>
-            </div>
-
-            <div class="footer_block">
-                <h4 class="footer_title">Наши аккаунты</h4>
-                <div class="social social--footer">
-                    <a class="social_item" href="#" target="_blank">
-                        <svg class="social_icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="social_item" href="#" target="_blank">
-                        <svg class="social_icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-                    <a class="social_item" href="#" target="_blank">
-                        <svg class="social_icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright_text">
+                    <div>Corpyright © 2021 ItBottom (Когда думал, что достиг дна но снизу постучали)</div>
+                    <div>Made <span> by Yurii Stolbetskyi</span></div>
                 </div>
             </div>
-
-            <div class="footer_block">
-                <h4 class="footer_title">О нас</h4>
-                <div class="footer_text">
-                    <p>Мы стремимся стать лучше.</p>
-                </div>
-            </div>
-
-        </div><!-- footer_title -->
-
-    </div><!-- container -->
-
-    <div class="copyright">
-        <div class="container">
-            <div class="copyright_text">
-                <div>Corpyright © 2021 ItBottom (Когда думал, что достиг дна но снизу постучали)</div>
-                <div>Made <span> by Yurii Stolbetskyi</span></div>
-            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>
+
 </body>
 </html>
