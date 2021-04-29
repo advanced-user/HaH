@@ -39,3 +39,12 @@ setInterval(function (){
     time -= 0.1;
     filter.style.opacity = String(time);
 }, 500)
+
+let sum =  1000000;
+let perepl = 1000000;
+for(let i = 0; i < 5; i++)
+{
+    perepl += perepl*0.1;
+}
+perepl -= sum;
+console.log(perepl);
