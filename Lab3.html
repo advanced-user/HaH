@@ -90,12 +90,28 @@
     <span id="filter" style="margin-top: 50px; opacity: 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae doloribus unde voluptates. Ab accusamus animi assumenda atque autem consequatur corporis culpa eius excepturi exercitationem expedita fugiat inventore natus neque nostrum, odio pariatur perspiciatis quam repellat, saepe sed sequi sint soluta suscipit velit vero voluptates? Fuga harum ipsa iure nesciunt?</span>
 
     <div id="mouse_coordinates">
-
+        <span style="font-size: 20pt" id="x">X: </span><br>
+        <span style="font-size: 20pt" id="y">Y: </span><br>
+        <span style="font-size: 20pt" id="code">Code: </span><br>
     </div>
 
 
 
   </div>
+
+  <script>
+    document.addEventListener('keydown', (e)=>{
+      let el = document.getElementById('code');
+      el.textContent = "Code: " + e.keyCode;
+    })
+
+    document.addEventListener('mousemove', (e)=>{
+      let x = document.getElementById('x');
+      let y = document.getElementById('y');
+      x.textContent = "X: " + e.x;
+      y.textContent = "Y: " + e.y;
+    })
+  </script>
 
   <!-- Footer -->
   <footer class="footer">
