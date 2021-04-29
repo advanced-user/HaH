@@ -100,6 +100,24 @@ main article{
 	font-size: 14px;
 	text-decoration: none;
 }
+
+.header__logo {
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #fff;
+	grid-column: 2 / 3;
+}
+
+.header__logo:hover{
+	position: fixed;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	grid-column: 2 / 3;
+}
+
 @media (max-width: 767px) {
 	.header__menu {
 		display: none;
