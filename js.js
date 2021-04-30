@@ -12,7 +12,7 @@ function userProgress(time){
             let main_reviews = document.getElementById('main_reviews');
             main_reviews.style.display = "block";
         }
-        start += 100;
+        start += 0.5;
     }, time);
 }
 
