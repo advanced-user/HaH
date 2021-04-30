@@ -45,7 +45,7 @@
   </symbol>
 </svg>
 
-<div class="wrapper">
+<div class="wrapper" style=" user-select: none;">
 
   <header class="header">
     <img src="img/smile.png" class="header__logo"></img>
@@ -90,11 +90,14 @@
     <span id="filter" style="margin-top: 50px; opacity: 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae doloribus unde voluptates. Ab accusamus animi assumenda atque autem consequatur corporis culpa eius excepturi exercitationem expedita fugiat inventore natus neque nostrum, odio pariatur perspiciatis quam repellat, saepe sed sequi sint soluta suscipit velit vero voluptates? Fuga harum ipsa iure nesciunt?</span>
 
     <div id="mouse_coordinates">
-        <span style="font-size: 20pt" id="x">X: </span><br>
+        <span style="font-size: 20pt;" id="x">X: </span><br>
         <span style="font-size: 20pt" id="y">Y: </span><br>
         <span style="font-size: 20pt" id="code">Code: </span><br>
     </div>
 
+    <div class="countdown">
+      <span style="font-size: 20pt" id="countdown">Вікно закриється через</span><br>
+    </div>
 
 
   </div>
@@ -111,6 +114,13 @@
       x.textContent = "X: " + e.x;
       y.textContent = "Y: " + e.y;
     })
+
+    let card = "Іван вчора втратив свою кредитку, її номер 1178-9087-2384-8787. Тому він пішов в банк і описав ситуацію. Там пішли йому назустріч і видали нову кредитку під номером: 1103-8899-0811-1722";
+    let regular_all = /[0-9-]{19}/g; /* Регулярное выражение для поиска всех номеров кредитных карт в строке */
+    let result_all = card.match(regular_all);
+
+    console.log(result_all + " ");
+
   </script>
 
   <!-- Footer -->
