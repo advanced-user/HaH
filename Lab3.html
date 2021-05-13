@@ -94,7 +94,7 @@
         <span style="font-size: 20pt" id="y">Y: </span><br>
         <span style="font-size: 20pt" id="code">Code: </span><br>
     </div>
-
+    <span id="card"></span>
   </div>
 
   <script>
@@ -113,6 +113,9 @@
     let card = "Іван вчора втратив свою кредитку, її номер 1178-9087-2384-8787. Тому він пішов в банк і описав ситуацію. Там пішли йому назустріч і видали нову кредитку під номером: 1103-8899-0811-1722";
     let regular_all = /[0-9-]{19}/g; /* Регулярное выражение для поиска всех номеров кредитных карт в строке */
     let result_all = card.match(regular_all);
+
+    let c = document.getElementById('card');
+    c.textContent = result_all;
 
     console.log(result_all + " ");
 

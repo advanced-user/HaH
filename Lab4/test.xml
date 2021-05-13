@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<brands>
+    <brand>
+        <name>Xiaomi Poco X3 6</name>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis nam tempora vitae voluptatem, voluptatum.</description>
+        <characteristics>
+            <producer>Xiaomi</producer>
+            <operating-system>Android 10.0</operating-system>
+            <graphics-processor>Adreno 618</graphics-processor>
+            <weight unit="g">215</weight>
+            <RAM>6</RAM>
+        </characteristics>
+    </brand>
+    <brand>
+        <name>Xiaomi Redmi 9</name>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis nam tempora vitae voluptatem, voluptatum.</description>
+        <characteristics>
+            <producer>Xiaomi</producer>
+            <operating-system>Android 10.0</operating-system>
+            <graphics-processor>Mali-G52 MC2</graphics-processor>
+            <weight unit="g">198</weight>
+            <RAM>4</RAM>
+        </characteristics>
+    </brand>
+    <brand>
+        <name>Samsung Galaxy A52</name>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis nam tempora vitae voluptatem, voluptatum.</description>
+        <characteristics>
+            <producer>Samsung</producer>
+            <operating-system>Android 11.0</operating-system>
+            <graphics-processor>Adreno 618</graphics-processor>
+            <weight unit="g">189</weight>
+            <RAM>4</RAM>
+        </characteristics>
+    </brand>
+    <brand>
+        <name>Apple iPhone 12 Pro Max</name>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis nam tempora vitae voluptatem, voluptatum.</description>
+        <characteristics>
+            <producer>Apple</producer>
+            <operating-system>iOS 14</operating-system>
+            <graphics-processor>Apple A14 Bionic</graphics-processor>
+            <weight unit="g">226</weight>
+            <RAM>6</RAM>
+        </characteristics>
+    </brand>
+    <brand>
+        <name>Xiaomi Redmi Note 10 Pro</name>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis nam tempora vitae voluptatem, voluptatum.</description>
+        <characteristics>
+            <producer>Xiaomi</producer>
+            <operating-system>Android 10.0</operating-system>
+            <graphics-processor>Adreno 618</graphics-processor>
+            <weight unit="g">215</weight>
+            <RAM>193</RAM>
+        </characteristics>
+    </brand>
+</brands>
