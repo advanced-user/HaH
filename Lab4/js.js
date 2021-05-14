@@ -4,4 +4,4 @@ document.evaluate("//brands[1]/brand[2]/description[1]/text()", document, null, 
 for (let unit of $x('//@unit'))
     console.log(unit.nodeValue);
 
-$x("//brand[./name/text()='Xiaomi Redmi 9' and ./characteristics/weight[@unit='g']]")
+$x("//brand[./name/text()='Xiaomi Redmi 9' and ./characteristics/weight[@unit='g']]");
