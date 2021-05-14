@@ -29,7 +29,7 @@
             <producer>Samsung</producer>
             <operating-system>Android 11.0</operating-system>
             <graphics-processor>Adreno 618</graphics-processor>
-            <weight unit="g">189</weight>
+            <weight unit="kg">189</weight>
             <RAM>4</RAM>
         </characteristics>
     </brand>
